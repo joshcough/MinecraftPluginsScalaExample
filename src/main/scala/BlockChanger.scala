@@ -10,10 +10,15 @@ class BlockChanger extends ListenerPlugin with CommandPlugin {
   val command  = Command(
     name = "bc",
     desc = "Specify which material to change blocks to, or just /bc to turn off",
-    args = material.?)(
+    args = material or noArguments)(
     body = {
-      case (p, Some(m)) => users += (p -> m); p ! (s"bc using: $m")
-      case (p, None)    => users -= p;        p ! "bc has been disabled"
+      case (p, Left(m)) => users += (p -> m); p ! (s"bc using: $m")
+      case (p, _)       => users -= p;        p ! "bc has been disabled"
     }
   )
+}
+
+object YMLGenerator {
+  def main(args: Array[String]): Unit =
+    new BlockChanger().writeYML("Josh Cough", "0.2.1")
 }
