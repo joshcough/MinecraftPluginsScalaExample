@@ -18,9 +18,12 @@ Then run: `./sbt run package` (hopefully soon this will just be `./sbt package`)
 
 This will build the plugin jar file for you, in the `MinecraftPluginsScalaExample/target/scala-2.10`  directory.
 
-## 3. Get the JCDC Plugin Factory dependency
+## 3. Get the ScalaLibPlugin and the ScalaPluginAPI dependencies
 
-Download the latest release from http://dev.bukkit.org/server-mods/scala-plugin-api/files/
+Download the latest releases from http://dev.bukkit.org/server-mods/scala-plugin-api/files/
+
+(Look for the latest versions of scala-library-plugin and scala-plugin-api on that page.) 
+
 
 ## 4. Enjoy
 
