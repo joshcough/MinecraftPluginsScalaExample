@@ -29,10 +29,8 @@ This will build the plugin jar file for you, in the `MinecraftPluginsScalaExampl
 
 ## 3. Get the ScalaLibPlugin and the ScalaPluginAPI dependencies
 
-* http://dev.bukkit.org/media/files/666/690/scala-plugin-api_2.10-0.3.0.jar
 * http://dev.bukkit.org/media/files/666/685/scala-library-plugin-2.10.0.jar
-
-(Look for the latest versions of scala-library-plugin and scala-plugin-api on that page.) 
+* http://dev.bukkit.org/media/files/666/690/scala-plugin-api_2.10-0.3.0.jar
 
 ## 4. Enjoy
 
