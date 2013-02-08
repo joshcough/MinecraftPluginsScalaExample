@@ -1,5 +1,7 @@
-project
-target
+project/
+target/
 src/main/resources
 .lib
-out
+out/
+bukkit/
+.idea/workspace.xml
