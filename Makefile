@@ -7,7 +7,7 @@ compile:
 run-server:
 	cd bukkit; java -Djava.ext.dirs=/Library/Java/Home/lib/ext:lib -Xmx2048M -Xms512M -jar bukkit.jar nogui
 
-setup:
+setup: compile
 	mkdir -p bukkit/plugins
 	cp ~/.ivy2/cache/org.bukkit/craftbukkit/jars/craftbukkit-1.4.7-R0.1.jar bukkit/bukkit.jar
 	cp ~/.ivy2/cache/jcdc.pluginfactory/scala-plugin-api_2.10.0/jars/scala-plugin-api_2.10.0-0.3.0.jar bukkit/plugins/
