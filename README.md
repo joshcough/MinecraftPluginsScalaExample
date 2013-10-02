@@ -23,14 +23,14 @@ The example repo contains one simple plugin: BlockChanger, and the code and docu
 
 From the `MinecraftPluginsScalaExample` directory, run:
 
-`./sbt run package` (hopefully soon this will just be `./sbt package`)
+`./sbt package`
 
 This will build the plugin jar file for you, in the `MinecraftPluginsScalaExample/target/scala-2.10`  directory.
 
 ## 3. Get the ScalaLibPlugin and the ScalaPluginAPI dependencies
 
-* http://dev.bukkit.org/media/files/666/685/scala-library-plugin-2.10.0.jar
-* http://dev.bukkit.org/media/files/666/690/scala-plugin-api_2.10-0.3.0.jar
+* http://dl.bintray.com/joshcough/maven/com/joshcough/scala-minecraft-scala-library_2.10/0.3.2/scala-minecraft-scala-library_2.10-0.3.2-assembly.jar
+* http://dl.bintray.com/joshcough/maven/com/joshcough/scala-minecraft-plugin-api_2.10/0.3.2/scala-minecraft-plugin-api_2.10-0.3.2.jar
 
 ## 4. Enjoy
 
