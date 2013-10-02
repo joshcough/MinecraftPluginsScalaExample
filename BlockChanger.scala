@@ -1,4 +1,6 @@
-import jcdc.pluginfactory.{CommandPlugin, ListenerPlugin}
+package com.example
+
+import com.joshcough.minecraft.{CommandPlugin, ListenerPlugin}
 import org.bukkit.entity.Player
 import org.bukkit.Material
 
@@ -13,12 +15,7 @@ class BlockChanger extends ListenerPlugin with CommandPlugin {
     args = material or eof)(
     body = {
       case (p, Left(m)) => users += (p -> m); p ! s"bc using: $m"
-      case (p, _)       => users -= p;        p ! "bc has been disabled"
+      case (p, _)       => users -= p;        p !  "bc has been disabled"
     }
   )
-}
-
-object YMLGenerator {
-  def main(args: Array[String]): Unit =
-    new BlockChanger().writeYML("Josh Cough", "0.3.0")
 }
