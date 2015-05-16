@@ -1,7 +1,7 @@
 project/
 target/
+bukkit/plugins
 src/main/resources
 .lib
 out/
-bukkit/
 .idea/workspace.xml

@@ -1,20 +1,20 @@
 name := "Block Changer Plugin"
 
-version := "0.3.2"
+version := "0.3.4"
 
 organization := "examples"
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.11.6"
 
 // this specifies where to get the bukkit jar from.
-resolvers += "Bukkit" at "http://repo.bukkit.org/content/repositories/releases"
+resolvers += "Bukkit" at "http://repo.bukkit.org/content/groups/public/"
 
-seq(bintrayResolverSettings:_*)
+resolvers += Resolver.jcenterRepo
 
 seq(pluginYmlSettings("com.example.BlockChanger", "JoshCough"):_*)
 
 // plugins need to depend on com.joshcough.minecraft, and bukkit
 libraryDependencies ++= Seq(
-  "com.joshcough"     %% "scala-minecraft-plugin-api" % "0.3.2",
-  "org.bukkit"         % "craftbukkit"                % "1.5.2-R1.0"
+  "com.joshcough"     %% "scala-minecraft-plugin-api" % "0.3.4",
+  "org.bukkit"         % "bukkit"                     % "1.7.2-R0.2"
 )

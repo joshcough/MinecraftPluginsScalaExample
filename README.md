@@ -5,9 +5,9 @@ A simple example of how to use my Scala API for creating minecraft plugins. To r
 
 ## 1a / Prerequisites
 
-These instructions assume you are on a mac, and have git installed on your machine. They probably aren't that difficult to translate into Windows or whatever. They also assume that you have Bukkit 1.4.7-R0.1 installed and that you know how to use it.
+These instructions assume you are on a mac, and have git installed on your machine. 
+They probably aren't that difficult to translate into Windows or whatever.
 
-* Instructions on setting up Bukkit can be found here: http://wiki.bukkit.org/Setting_up_a_server
 * Git can be downloaded here: http://git-scm.com/downloads
 * Macs can be purchased here: http://www.apple.com
 
@@ -19,22 +19,15 @@ The example repo is here: https://github.com/joshcough/MinecraftPluginsScalaExam
 
 The example repo contains one simple plugin: BlockChanger, and the code and documentation for it can be found [here](https://github.com/joshcough/MinecraftPluginsScalaExample/blob/master/src/main/scala/BlockChanger.scala). It demonstrates how to write Listeners and Commands. 
 
-## 2. Building the repo
+The example repo also contains a bukkit server, and a Makefile which will automatically build everything, and run the server for you. 
 
-From the `MinecraftPluginsScalaExample` directory, run:
+## 2. make and play
 
-`./sbt package`
+Run `make` at the command line, fire up Minecraft, connect to your local server, and have fun!
 
-This will build the plugin jar file for you, in the `MinecraftPluginsScalaExample/target/scala-2.10`  directory.
+## 3. Playing on your own server
 
-## 3. Get the ScalaLibPlugin and the ScalaPluginAPI dependencies
-
-* http://dl.bintray.com/joshcough/maven/com/joshcough/scala-minecraft-scala-library_2.10/0.3.2/scala-minecraft-scala-library_2.10-0.3.2-assembly.jar
-* http://dl.bintray.com/joshcough/maven/com/joshcough/scala-minecraft-plugin-api_2.10/0.3.2/scala-minecraft-plugin-api_2.10-0.3.2.jar
-
-## 4. Enjoy
-
-Take the jars from steps 2 and 3 and put them into your Bukkit/plugins folder. Start your server, and play. 
+If you want to play on your own server, after running `make`, copy the jars in bukkit/plugins to your bukkit plugins folder. Start your server, and play. 
 
 ## More Information
 
