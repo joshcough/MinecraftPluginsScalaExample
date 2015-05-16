@@ -1,4 +1,4 @@
-project/
+project/target
 target/
 bukkit/plugins
 src/main/resources
